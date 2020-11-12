@@ -47,7 +47,6 @@ io.on("connection", (socket) => {
     connection.query("select * from log", (error, rows) => {
       if (error) console.log(error);
       dbstate = rows; //변경 *****
-      //console.log("dbconnect:", rows);
     });
 
     if (temp[0] != data[0] || temp[1] != data[1]) {
